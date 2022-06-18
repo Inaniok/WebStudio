@@ -40,7 +40,7 @@ body {
 /* site-nav */
 
 .link {
-  color: #212121;
+  color: var(--color-accent);
 }
 
 .site-nav .link:hover,
