@@ -3,7 +3,7 @@
 /* белый цвет #FFFFFF */
 /* акцент #2196F3 */
 
-/*вторичній цвет фона #F5F4FA */
+/*вторичный цвет фона #F5F4FA */
 
 :root {
   --color-accent: #212121;
@@ -19,16 +19,22 @@ body {
   list-style: none;
 }
 
+.link {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
 /* logo */
 
 .logo {
-  color: #2196f3;
   font-family: 'Raleway';
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #2196f3;
 }
+
 .logo-accent {
   color: var(--color-accent);
 }
@@ -39,30 +45,27 @@ body {
 
 /* site-nav */
 
-.link {
+.site-nav .item:hover,
+.site-nav .item:focus {
   color: var(--color-accent);
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(--color-accent);
-}
-
-.site-nav .link.current {
+.site-nav .item.current {
   color: #2196f3;
 }
 
 /* header-link */
 
-.mail-link,
-.tel-link {
+.header-mail,
+.header-tel {
   color: #757575;
+  text-decoration: none;
 }
 
-.mail-link:hover,
-.mail-link:focus,
-.tel-link:hover,
-.tel-link:focus,
+.header-mail:hover,
+.header-mail:focus,
+.header-tel:hover,
+.header-tel:focus,
 .footer-mail:hover,
 .footer-mail:focus,
 .footer-tel:hover,
@@ -70,56 +73,15 @@ body {
   color: #2196f3;
 }
 
-.link,
-.mail-link,
-.tel-link {
+.header-mail,
+.header-tel {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 /* main */
-
-/* section */
-
-.section-title {
-  color: var(--color-accent);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-}
-
-.features-subtitle {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.1;
-}
-
-.features-text {
-  font-size: 14px;
-  line-height: 1.7;
-  color: #757575;
-}
-
-.section-team {
-  background-color: #f5f4fa;
-}
-.team-subtitle {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-}
-
-.team-text {
-  font-size: 16px;
-  line-height: 1.19;
-  color: #757575;
-}
-
-.section > .text {
-  font-size: 14px;
-  line-height: 1.7;
-}
 
 /* hero-section */
 .hero {
@@ -130,16 +92,25 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   color: #ffffff;
 }
 
 /* button  */
 
-.button {
+.button,
+.button-portfolio {
   cursor: pointer;
 }
 
 .button.primary {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
   color: #ffffff;
   background-color: #2196f3;
 }
@@ -150,26 +121,90 @@ body {
   background-color: #188ce8;
 }
 
+.button-portfolio.primary {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  background: #2196f3;
+}
+
 .button.secondary {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
   color: var(--color-accent);
   background-color: #f5f4fa;
 }
 
-/* portfolio */
+/* section */
 
-.portfolio {
-  background-color: #e5e5e5;
+.section-title {
+  color: var(--color-accent);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
+
+.features-subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.features-text {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.section-team {
+  background-color: #f5f4fa;
+}
+.team-subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-text {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.section > .text {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* portfolio */
 
 .portfolio-subtitle {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.78;
+  letter-spacing: 0.06em;
 }
 
 .portfolio-text {
   font-size: 16px;
   line-height: 1.88;
+  letter-spacing: 0.03em;
   color: #757575;
 }
 
@@ -186,10 +221,15 @@ body {
 }
 
 .footer-adress {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
   color: #ffffff;
+  text-decoration: none;
 }
 
 .footer-mail,
 .footer-tel {
   color: #757575;
+  text-decoration: none;
 }
