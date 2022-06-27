@@ -14,12 +14,14 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header-page">
+      <div class="container">
+        <div class="header-inner">
       <nav class="header-nav">
         <a class="logo link" href="Logo">Web<span class="logo-accent">Studio</span></a>
         <ul class="site-nav list">
           <li class="header-item">
-            <a class="item link" href="./index.html">Студия</a>
+            <a class="item  link" href="./index.html">Студия</a>
           </li>
           <li class="header-item">
             <a class="item current link" href="./portfolio.html">Портфолио</a>
@@ -29,7 +31,7 @@
           </li>
         </ul>
       </nav>
-      <ul class="header-click list">
+          <ul class="header-click list">
         <li>
           <a class="header-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
         </li>
@@ -37,30 +39,35 @@
           <a class="header-tel link" href="tel:+380961111111">+38 096 111 11 11</a>
         </li>
       </ul>
+    </div>
+    </div>
     </header>
     <main>
       <!-- Portfolio -->
       <section class="portfolio">
+        <div class="container">
         <h1 class="portfolio-title">Портфолио</h1>
         <ul class="portfolio-filter list">
           <li class="portfolio-nav">
             <button class="button-portfolio primary" type="button">Все</button>
           </li>
-          <li>
-            <button class="button secondary" type="button">Веб-сайты</button>
+          <li class="portfolio-nav">
+            <button class="button site secondary" type="button">Веб-сайты</button>
           </li>
-          <li>
-            <button class="button secondary" type="button">Приложения</button>
+          <li class="portfolio-nav">
+            <button class="button app secondary" type="button">Приложения</button>
           </li>
-          <li>
-            <button class="button secondary" type="button">Дизайн</button>
+          <li class="portfolio-nav">
+            <button class="button design secondary" type="button">Дизайн</button>
           </li>
-          <li>
-            <button class="button secondary" type="button">Маркетинг</button>
+          <li class="portfolio-nav">
+            <button class="button market secondary" type="button">Маркетинг</button>
           </li>
         </ul>
+      </div>
+      <div class="container">
         <ul class="portfolio-sample list">
-          <li>
+          <li class="container-sample">
             <img
               class="portfolio-img"
               src="./images/images_portfolio/img(1).jpg"
@@ -71,7 +78,7 @@
             <h2 class="portfolio-subtitle">Технокряк</h2>
             <p class="portfolio-text">Веб-сайт</p>
           </li>
-          <li>
+          <li class="container-sample">
             <img
               class="portfolio-img"
               src="./images/images_portfolio/img(2).jpg"
@@ -82,7 +89,7 @@
             <h2 class="portfolio-subtitle">Постер New Orlean vs Golden Star</h2>
             <p class="portfolio-text">Дизайн</p>
           </li>
-          <li>
+          <li class="container-sample">
             <img
               class="portfolio-img"
               src="./images/images_portfolio/img(3).jpg"
@@ -93,7 +100,7 @@
             <h2 class="portfolio-subtitle">Ресторан Seafood</h2>
             <p class="portfolio-text">Приложение</p>
           </li>
-          <li>
+          <li class="container-sample">
             <img
               class="portfolio-img"
               src="./images/images_portfolio/img(4).jpg"
@@ -104,7 +111,7 @@
             <h2 class="portfolio-subtitle">Проект Prime</h2>
             <p class="portfolio-text">Маркетинг</p>
           </li>
-          <li>
+          <li class="container-sample">
             <img
               class="portfolio-img"
               src="./images/images_portfolio/img(5).jpg"
@@ -115,7 +122,7 @@
             <h2 class="portfolio-subtitle">Проект Boxes</h2>
             <p class="portfolio-text">Приложение</p>
           </li>
-          <li>
+          <li class="container-sample">
             <img
               class="portfolio-img"
               src="./images/images_portfolio/img(6).jpg"
@@ -126,18 +133,17 @@
             <h2 class="portfolio-subtitle">Inspiration has no Borders</h2>
             <p class="portfolio-text">Веб-сайт</p>
           </li>
-          <li>
+          <li class="container-sample">
             <img
               class="portfolio-img"
               src="./images/images_portfolio/img(7).jpg"
               alt="Дизайн"
               width="370"
-              height="294"
-            />
+              height="294">
             <h2 class="portfolio-subtitle">Издание Limited Edition</h2>
             <p class="portfolio-text">Дизайн</p>
           </li>
-          <li>
+          <li class="container-sample"> 
             <img
               class="portfolio-img"
               src="./images/images_portfolio/img(8).jpg"
@@ -148,7 +154,7 @@
             <h2 class="portfolio-subtitle">Проект LAB</h2>
             <p class="portfolio-text">Маркетинг</p>
           </li>
-          <li>
+          <li class="container-sample">
             <img
               class="portfolio-img"
               src="./images/images_portfolio/img(9).jpg"
@@ -160,9 +166,11 @@
             <p class="portfolio-text">Приложение</p>
           </li>
         </ul>
+      </div>
       </section>
     </main>
     <footer class="footer">
+      <div class="container">
       <a class="logo link" href="Logo">Web<span class="logo-accent-footer">Studio</span></a>
       <address class="footer-contacts">
         <ul class="adress list">
@@ -181,6 +189,7 @@
           <li><a class="footer-tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
       </address>
+    </div>
     </footer>
   </body>
 </html>
