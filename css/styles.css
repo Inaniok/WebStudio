@@ -386,16 +386,16 @@ img {
 }
 
 .portfolio-sample {
-  display: flex;
+  display:flex;
   flex-wrap: wrap;
 }
 
 .container-sample {
   width: 370px;
   height: 404px;
-  left: 215px;
-  top: 1130px;
-  margin-right: 30px;
+  left: 1015px;
+  top: 262px;
+  margin-right: 45px;
   margin-bottom: 30px;
   background: #ffffff;
   border: 1px solid #eeeeee;
