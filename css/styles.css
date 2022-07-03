@@ -560,9 +560,8 @@ img {
 .footer-inner {
   display: flex;
   justify-content: flex-start;
+  align-items: baseline;
 }
-
-
 
 .footer .logo {
   display: block;
