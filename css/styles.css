@@ -63,21 +63,21 @@ img {
   padding: 0 15px;
 }
 
-/* Header */
+/* HEADER */
 
 .header-page {
   border-bottom: 1px solid #ececec;
-}
-
-.header-nav {
-  display: flex;
-  align-items: center;
 }
 
 .header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -89,7 +89,7 @@ img {
   color: var(--color-accent);
 }
 
-.logo-accent {
+.logo-accent-header {
   color: var( --color-main);
 }
 
@@ -141,14 +141,8 @@ img {
   display: flex;
 }
 
-.button-header {
-  padding: 0;
-  border: 0;
-}
-
-.icon-header {
-  fill: currentColor;
-  margin-right: 10px;
+.header-contacts-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .header-link {
@@ -162,10 +156,6 @@ img {
   align-items: center;
 }
 
-.header-contacts-item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .header-link:hover,
 .header-link:focus,
 .footer-link:hover,
@@ -173,7 +163,12 @@ img {
   color: var(--color-accent);
 }
 
-/* main */
+.icon-header {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+/* MAIN */
 
 /* hero-section */
 .hero {
@@ -291,6 +286,11 @@ img {
   padding: 94px 0;
 }
 
+.section > .text {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -313,6 +313,8 @@ img {
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
+
+/* Features */
 
 .features {
   display: flex;
@@ -361,7 +363,11 @@ img {
   padding-top: 0;
 }
 
-/* Команда */
+/* Team */
+
+.section-team {
+  background-color: #f5f4fa;
+}
 
 .team {
   display: flex;
@@ -375,45 +381,6 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-}
-
-.team-social-link {
-  width: 44px;
-  height: 44px;
-}
-
-.social-link {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  color: #afb1b8;
-  border-radius: 50%;
-  align-items: center;
-  justify-content: center;
-}
-
-.social-link:focus,
-.social-link:hover {
-  background-color: var(--color-accent);
-  color: var(--color-white);
-}
-
-.social-list {
-  display: flex;
-  justify-content: center;
-  margin-top: 16px;
-}
-
-.team-social-icon {
-  fill: currentColor;
-}
-
-.team-social-link + .team-social-link {
-  margin-left: 10px;
-}
-
-.section-team {
-  background-color: #f5f4fa;
 }
 
 .team-wrapper {
@@ -441,24 +408,54 @@ img {
   color: var(--color-secondary);
 }
 
-.section > .text {
-  font-size: 14px;
-  line-height: 1.7;
+.social-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
 }
 
-/* Компанії */
+.team-social-link {
+  width: 44px;
+  height: 44px;
+}
+
+.team-social-link + .team-social-link {
+  margin-left: 10px;
+}
+
+.social-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  color: #afb1b8;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-link:focus,
+.social-link:hover {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+}
+
+.team-social-icon {
+  fill: currentColor;
+}
+
+/* Clients */
 
 .clients {
   display: flex;
 }
 
-.clients-list:not(:first-child) {
-  margin-left: 30px;
-}
-
 .clients-list {
   width: 170px;
   height: 92px;
+}
+
+.clients-list:not(:first-child) {
+  margin-left: 30px;
 }
 
 .clients-link {
@@ -489,7 +486,7 @@ img {
   fill: var(--color-accent);
 }
 
-/* portfolio */
+/* Portfolio */
 
 .portfolio-filter {
   display: flex;
@@ -546,7 +543,8 @@ img {
   color: var(--color-secondary);
 }
 
-/* footer */
+/* FOOTER */
+
 .footer {
   background: #2f303a;
   padding-top: 60px;
