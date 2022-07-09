@@ -578,7 +578,7 @@ background: rgba(47, 48, 58, 0.8);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-item:hover .portfolio-overlay {
+.container-sample:hover .portfolio-overlay {
   transform: translateY(0);
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
