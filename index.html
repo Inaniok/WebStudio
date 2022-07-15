@@ -430,16 +430,98 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subscribe">
+          <h2 class="footer-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
+          <form class="subscription" name="subscription" autocomplete="on">
+            <label class="visually-hidden" for="subsrtiption-email">Почта</label>
+            <input
+              class="subscription-input"
+              type="email"
+              name="subsrtiption-email"
+              id="subsrtiption-email"
+              placeholder="E-mail"
+              required
+            />
+            <button class="form-submit-btn" type="submit">
+              Подписаться
+              <svg class="form-submit-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close-button" type="button" data-modal-close>
-          <svg width="11" height="11">
+          <svg class="modal-close-icon" width="11" height="11">
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
+        <div class="modal-inner">
+          <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+          <form class="form" name="main-form" novalidate autocomplete="on">
+            <div class="form-group-field">
+              <div class="form-field">
+                <label class="form-field-label" for="user-name"> Имя</label>
+                <div class="form-field-inner">
+                  <input class="form-field-input" id="user-name" name="user-name" />
+                  <svg class="form-field-icon" width="12" height="12" aria-hidden="true">
+                    <use href="./images/icons.svg#icon-person-black"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="form-field">
+                <label class="form-field-label" for="user-phone"> Телефон</label>
+                <div class="form-field-inner">
+                  <input class="form-field-input" id="user-phone" name="user-phone" />
+                  <svg class="form-field-icon" width="13" height="13" aria-hidden="true">
+                    <use href="./images/icons.svg#icon-phone-black"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="form-field">
+                <label class="form-field-label" for="user-email"> Почта</label>
+                <div class="form-field-inner">
+                  <input class="form-field-input" id="user-email" name="user-email" />
+                  <svg class="form-field-icon" width="15" height="12" aria-hidden="true">
+                    <use href="./images/icons.svg#icon-email-black"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="form-field">
+                <label class="form-field-label" for="user-comment"> Комментарий</label>
+                <textarea
+                  class="form-field-input form-field-textaria"
+                  name="user-comment"
+                  id="user-comment"
+                  placeholder="Введите текст"
+                ></textarea>
+              </div>
+            </div>
+            <div class="form-agreement">
+              <label class="form-agreement-label">
+                <input
+                  class="checkbox visually-hidden"
+                  type="checkbox"
+                  name="user-agreement"
+                  required
+                />
+                Соглашаюсь с рассылкой и принимаю&nbsp;
+                <a class="form-agreement-link" href="#">Условия договора</a>
+                <svg class="form-agreement-icon-check" width="16" height="15">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+                <svg class="form-agreement-icon-checked" width="16" height="15">
+                  <use href="./images/icons.svg#icon-checked"></use>
+                </svg>
+              </label>
+              <button class="form-submit-btn button primary" type="submit">Отправить</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
 
