@@ -18,34 +18,37 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="header-page">
-      <div class="container header-inner">
-        <nav class="header-nav">
-          <a class="logo link" href="Logo">Web<span class="logo-accent-header">Studio</span></a>
-          <ul class="site-nav list">
-            <li class="header-item">
-              <a class="item link" href="./index.html">Студия</a>
+    <!-- Header section -->
+    <header class="header">
+      <div class="container header__container">
+        <nav class="header__nav">
+          <a class="logo link" href="Logo">Web<span class="logo__header">Studio</span></a>
+          <ul class="header__list list">
+            <li class="header__item">
+              <a class="header__link link" href="./index.html">Студия</a>
             </li>
-            <li class="header-item">
-              <a class="item current link" href="./portfolio.html">Портфолио</a>
+            <li class="header__item">
+              <a class="header__link header__link--active link" href="./portfolio.html"
+                >Портфолио</a
+              >
             </li>
-            <li class="header-item">
-              <a class="item link" href="#">Контакты</a>
+            <li class="header__item">
+              <a class="header__link link" href="#">Контакты</a>
             </li>
           </ul>
         </nav>
-        <ul class="header-contacts list">
-          <li class="header-contacts-item">
-            <a class="header-link" href="mailto:info@devstudio.com">
-              <svg class="icon-header" width="16" height="12">
+        <ul class="header__contacts list">
+          <li class="header__contacts-item">
+            <a class="header__contacts-link" href="mailto:info@devstudio.com">
+              <svg class="header__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="header-contacts-item">
-            <a class="header-link" href="tel:+380961111111">
-              <svg class="icon-header" width="10" height="16px">
+          <li class="header__contacts-item">
+            <a class="header__contacts-link" href="tel:+380961111111">
+              <svg class="header__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -59,295 +62,306 @@
       <section class="section portfolio">
         <div class="container">
           <h1 class="visually-hidden">Портфолио</h1>
-          <ul class="portfolio-filter list">
-            <li class="portfolio-nav">
-              <button class="button-portfolio primary" type="button">Все</button>
+          <ul class="portfolio__filter list">
+            <li class="portfolio__nav">
+              <button class="portfolio__button" type="button">Все</button>
             </li>
-            <li class="portfolio-nav">
-              <button class="button site secondary" type="button">Веб-сайты</button>
+            <li class="portfolio__nav">
+              <button class="portfolio__button portfolio__button--passive" type="button">
+                Веб-сайты
+              </button>
             </li>
-            <li class="portfolio-nav">
-              <button class="button app secondary" type="button">Приложения</button>
+            <li class="portfolio__nav">
+              <button class="portfolio__button portfolio__button--passive" type="button">
+                Приложения
+              </button>
             </li>
-            <li class="portfolio-nav">
-              <button class="button design secondary" type="button">Дизайн</button>
+            <li class="portfolio__nav">
+              <button class="portfolio__button portfolio__button--passive" type="button">
+                Дизайн
+              </button>
             </li>
-            <li class="portfolio-nav">
-              <button class="button market secondary" type="button">Маркетинг</button>
+            <li class="portfolio__nav">
+              <button class="portfolio__button portfolio__button--passive" type="button">
+                Маркетинг
+              </button>
             </li>
           </ul>
-          <ul class="portfolio-sample list">
-            <li class="container-sample">
-              <div class="portfolio-item">
-              <img
-                class="portfolio-img"
-                src="./images/images_portfolio/img(1).jpg"
-                alt="Веб-сайт"
-                width="370"
-                height="294"
-              />
-              <div>
-                <p class="portfolio-overlay">
-                  Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
-                  Все это позволит посетителю получить исчерпывающие сведения о компании или частном
-                  лице.
-                </p>
-            </div>
-          </div>
-              <div class="portfolio-wrapper">
-                <h2 class="portfolio-subtitle">Технокряк</h2>
-                <p class="portfolio-text">Веб-сайт</p>
+          <ul class="gallery list">
+            <li class="gallery__item">
+              <div class="gallery__overflow">
+                <img
+                  class="gallery__img"
+                  src="./images/images_portfolio/img(1).jpg"
+                  alt="Веб-сайт"
+                  width="370"
+                  height="294"
+                />
+                <div>
+                  <p class="gallery__overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+              </div>
+              <div class="gallery__wrapper">
+                <h2 class="gallery__subtitle">Технокряк</h2>
+                <p class="gallery__text">Веб-сайт</p>
               </div>
             </li>
-            <li class="container-sample">
-              <div class="portfolio-item">
-              <img
-                class="portfolio-img"
-                src="./images/images_portfolio/img(2).jpg"
-                alt="Дизайн"
-                width="370"
-                height="294"
-              />
-              <div>
-                <p class="portfolio-overlay">
-                  Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
-                  Все это позволит посетителю получить исчерпывающие сведения о компании или частном
-                  лице.
-                </p>
-            </div>
-          </div>
-              <div class="portfolio-wrapper">
-                <h2 class="portfolio-subtitle">Постер New Orlean vs Golden Star</h2>
-                <p class="portfolio-text">Дизайн</p>
+            <li class="gallery__item">
+              <div class="gallery__overflow">
+                <img
+                  class="gallery__img"
+                  src="./images/images_portfolio/img(2).jpg"
+                  alt="Дизайн"
+                  width="370"
+                  height="294"
+                />
+                <div>
+                  <p class="gallery__overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+              </div>
+              <div class="gallery__wrapper">
+                <h2 class="gallery__subtitle">Постер New Orlean vs Golden Star</h2>
+                <p class="gallery__text">Дизайн</p>
               </div>
             </li>
-            <li class="container-sample">
-              <div class="portfolio-item">
-              <img
-                class="portfolio-img"
-                src="./images/images_portfolio/img(3).jpg"
-                alt="Приложение"
-                width="370"
-                height="294"
-              />
-              <div>
-                <p class="portfolio-overlay">
-                  Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
-                  Все это позволит посетителю получить исчерпывающие сведения о компании или частном
-                  лице.
-                </p>
-            </div>
-          </div>
-              <div class="portfolio-wrapper">
-                <h2 class="portfolio-subtitle">Ресторан Seafood</h2>
-                <p class="portfolio-text">Приложение</p>
+            <li class="gallery__item">
+              <div class="gallery__overflow">
+                <img
+                  class="gallery__img"
+                  src="./images/images_portfolio/img(3).jpg"
+                  alt="Приложение"
+                  width="370"
+                  height="294"
+                />
+                <div>
+                  <p class="gallery__overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+              </div>
+              <div class="gallery__wrapper">
+                <h2 class="gallery__subtitle">Ресторан Seafood</h2>
+                <p class="gallery__text">Приложение</p>
               </div>
             </li>
-            <li class="container-sample">
-              <div class="portfolio-item">
-              <img
-                class="portfolio-img"
-                src="./images/images_portfolio/img(4).jpg"
-                alt="Маркетинг"
-                width="370"
-                height="294"
-              />
-              <div>
-                <p class="portfolio-overlay">
-                  Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
-                  Все это позволит посетителю получить исчерпывающие сведения о компании или частном
-                  лице.
-                </p>
-            </div>
-          </div>
-              <div class="portfolio-wrapper">
-                <h2 class="portfolio-subtitle">Проект Prime</h2>
-                <p class="portfolio-text">Маркетинг</p>
+            <li class="gallery__item">
+              <div class="gallery__overflow">
+                <img
+                  class="gallery__img"
+                  src="./images/images_portfolio/img(4).jpg"
+                  alt="Маркетинг"
+                  width="370"
+                  height="294"
+                />
+                <div>
+                  <p class="gallery__overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+              </div>
+              <div class="gallery__wrapper">
+                <h2 class="gallery__subtitle">Проект Prime</h2>
+                <p class="gallery__text">Маркетинг</p>
               </div>
             </li>
-            <li class="container-sample">
-              <div class="portfolio-item">
-              <img
-                class="portfolio-img"
-                src="./images/images_portfolio/img(5).jpg"
-                alt="Приложение"
-                width="370"
-                height="294"
-              />
-              <div>
-                <p class="portfolio-overlay">
-                  Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
-                  Все это позволит посетителю получить исчерпывающие сведения о компании или частном
-                  лице.
-                </p>
-            </div>
-          </div>
-              <div class="portfolio-wrapper">
-                <h2 class="portfolio-subtitle">Проект Boxes</h2>
-                <p class="portfolio-text">Приложение</p>
+            <li class="gallery__item">
+              <div class="gallery__overflow">
+                <img
+                  class="gallery__img"
+                  src="./images/images_portfolio/img(5).jpg"
+                  alt="Приложение"
+                  width="370"
+                  height="294"
+                />
+                <div>
+                  <p class="gallery__overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+              </div>
+              <div class="gallery__wrapper">
+                <h2 class="gallery__subtitle">Проект Boxes</h2>
+                <p class="gallery__text">Приложение</p>
               </div>
             </li>
-            <li class="container-sample">
-              <div class="portfolio-item">
-              <img
-                class="portfolio-img"
-                src="./images/images_portfolio/img(6).jpg"
-                alt="Веб-сайт"
-                width="370"
-                height="294"
-              />
-              <div>
-                <p class="portfolio-overlay">
-                  Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
-                  Все это позволит посетителю получить исчерпывающие сведения о компании или частном
-                  лице.
-                </p>
-            </div>
-          </div>
-              <div class="portfolio-wrapper">
-                <h2 class="portfolio-subtitle">Inspiration has no Borders</h2>
-                <p class="portfolio-text">Веб-сайт</p>
+            <li class="gallery__item">
+              <div class="gallery__overflow">
+                <img
+                  class="gallery__img"
+                  src="./images/images_portfolio/img(6).jpg"
+                  alt="Веб-сайт"
+                  width="370"
+                  height="294"
+                />
+                <div>
+                  <p class="gallery__overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+              </div>
+              <div class="gallery__wrapper">
+                <h2 class="gallery__subtitle">Inspiration has no Borders</h2>
+                <p class="gallery__text">Веб-сайт</p>
               </div>
             </li>
-            <li class="container-sample">
-              <div class="portfolio-item">
-              <img
-                class="portfolio-img"
-                src="./images/images_portfolio/img(7).jpg"
-                alt="Дизайн"
-                width="370"
-                height="294"
-              />
-              <div>
-                <p class="portfolio-overlay">
-                  Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
-                  Все это позволит посетителю получить исчерпывающие сведения о компании или частном
-                  лице.
-                </p>
-            </div>
-          </div>
-              <div class="portfolio-wrapper">
-                <h2 class="portfolio-subtitle">Издание Limited Edition</h2>
-                <p class="portfolio-text">Дизайн</p>
+            <li class="gallery__item">
+              <div class="gallery__overflow">
+                <img
+                  class="gallery__img"
+                  src="./images/images_portfolio/img(7).jpg"
+                  alt="Дизайн"
+                  width="370"
+                  height="294"
+                />
+                <div>
+                  <p class="gallery__overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+              </div>
+              <div class="gallery__wrapper">
+                <h2 class="gallery__subtitle">Издание Limited Edition</h2>
+                <p class="gallery__text">Дизайн</p>
               </div>
             </li>
-            <li class="container-sample">
-              <div class="portfolio-item">
-              <img
-                class="portfolio-img"
-                src="./images/images_portfolio/img(8).jpg"
-                alt="Маркетинг"
-                width="370"
-                height="294"
-              />
-              <div>
-                <p class="portfolio-overlay">
-                  Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
-                  Все это позволит посетителю получить исчерпывающие сведения о компании или частном
-                  лице.
-                </p>
-            </div>
-          </div>
-              <div class="portfolio-wrapper">
-                <h2 class="portfolio-subtitle">Проект LAB</h2>
-                <p class="portfolio-text">Маркетинг</p>
+            <li class="gallery__item">
+              <div class="gallery__overflow">
+                <img
+                  class="gallery__img"
+                  src="./images/images_portfolio/img(8).jpg"
+                  alt="Маркетинг"
+                  width="370"
+                  height="294"
+                />
+                <div>
+                  <p class="gallery__overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+              </div>
+              <div class="gallery__wrapper">
+                <h2 class="gallery__subtitle">Проект LAB</h2>
+                <p class="gallery__text">Маркетинг</p>
               </div>
             </li>
-            <li class="container-sample">
-              <div class="portfolio-item">
-              <img
-                class="portfolio-img"
-                src="./images/images_portfolio/img(9).jpg"
-                alt="Приложение"
-                width="370"
-                height="294"
-              />
-              <div>
-                <p class="portfolio-overlay">
-                  Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
-                  Все это позволит посетителю получить исчерпывающие сведения о компании или частном
-                  лице.
-                </p>
-            </div>
-          </div>
-              <div class="portfolio-wrapper">
-                <h2 class="portfolio-subtitle">Growing Business</h2>
-                <p class="portfolio-text">Приложение</p>
+            <li class="gallery__item">
+              <div class="gallery__overflow">
+                <img
+                  class="gallery__img"
+                  src="./images/images_portfolio/img(9).jpg"
+                  alt="Приложение"
+                  width="370"
+                  height="294"
+                />
+                <div>
+                  <p class="gallery__overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+              </div>
+              <div class="gallery__wrapper">
+                <h2 class="gallery__subtitle">Growing Business</h2>
+                <p class="gallery__text">Приложение</p>
               </div>
             </li>
           </ul>
         </div>
       </section>
     </main>
+    <!-- Footer section -->
     <footer class="footer">
-      <div class="container footer-inner">
-        <div class="footer-info">
-          <a class="logo link" href="Logo">Web<span class="logo-accent-footer">Studio</span></a>
-          <address class="footer-adress">
-            <ul class="footer-contacts list">
-              <li class="footer-contacts-item">
+      <div class="container footer__container">
+        <div class="footer__info">
+          <a class="logo logo__footer link" href="Logo"
+            >Web<span class="logo__footer--accent">Studio</span></a
+          >
+          <address class="address">
+            <ul class="address__list list">
+              <li class="address__item">
                 <a
-                  class="footer-location"
+                  class="address__location"
                   href="https://bit.ly/3pXMvUd"
                   target="_blank"
                   rel="noopener noreferrer"
                   >г. Киев, пр-т Леси Украинки, 26</a
                 >
               </li>
-              <li class="footer-contacts-item">
-                <a class="footer-link" href="mailto:info@devstudio.com">info@example.com</a>
+              <li class="address__item">
+                <a class="address__link" href="mailto:info@devstudio.com">info@example.com</a>
               </li>
-              <li class="footer-contacts-item">
-                <a class="footer-link" href="tel:+380961111111">+38 096 111 11 11</a>
+              <li class="address__item">
+                <a class="address__link" href="tel:+380961111111">+38 096 111 11 11</a>
               </li>
             </ul>
           </address>
         </div>
-        <div class="footer-social">
-          <h2 class="footer-title">Присоединяйтесь</h2>
-          <ul class="footer-links list">
-            <li class="footer-social-list">
-              <a href="#" class="footer-social-link">
-                <svg class="footer-social-icon" width="20" height="20">
+        <div class="footer__social">
+          <h2 class="footer__title">Присоединяйтесь</h2>
+          <ul class="social-network list">
+            <li class="social-network__item">
+              <a href="#" class="social-network__link">
+                <svg class="social-network__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-social-list">
-              <a href="#" class="footer-social-link"
-                ><svg class="footer-social-icon" width="20" height="20">
+            <li class="social-network__item">
+              <a href="#" class="social-network__link"
+                ><svg class="social-network__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use></svg
               ></a>
             </li>
-            <li class="footer-social-list">
-              <a href="#" class="footer-social-link"
-                ><svg class="footer-social-icon" width="20" height="20">
+            <li class="social-network__item">
+              <a href="#" class="social-network__link"
+                ><svg class="social-network__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use></svg
               ></a>
             </li>
-            <li class="footer-social-list">
-              <a href="#" class="footer-social-link"
-                ><svg class="footer-social-icon" width="20" height="20">
+            <li class="social-network__item">
+              <a href="#" class="social-network__link"
+                ><svg class="social-network__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use></svg
               ></a>
             </li>
           </ul>
         </div>
-        <div class="footer-subscribe">
-          <h2 class="footer-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
+        <div class="footer__subscribe">
+          <h2 class="footer__title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
           <form class="subscription" name="subscription" autocomplete="on">
             <label class="visually-hidden" for="subsrtiption-email">Почта</label>
             <input
-              class="subscription-input"
+              class="subscription__input"
               type="email"
               name="subsrtiption-email"
               id="subsrtiption-email"
               placeholder="E-mail"
               required
             />
-            <button class="form-submit-btn" type="submit">
+            <button class="subscription__btn" type="submit">
               Подписаться
-              <svg class="form-submit-icon" width="24" height="24">
+              <svg class="subscription__icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-icon-send"></use>
               </svg>
             </button>
