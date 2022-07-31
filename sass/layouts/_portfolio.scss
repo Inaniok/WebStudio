@@ -1,16 +1,43 @@
 .portfolio__filter {
-  display: flex;
+ display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+
+  &--append {
+    margin-bottom: 25px;
+  }
+
+  @media screen and (max-width: 767px) {
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+
+  &--append {
+    @media screen and (min-width: 768px) {
+      margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 50px;
+    }
+  }
 }
 
-.portfolio__filter .portfolio__nav:not(:last-child) {
-  margin-right: 8px;
+.portfolio__nav {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+  }
 }
 
 .gallery {
   display: flex;
   flex-wrap: wrap;
+  margin-left: #{$minusIndent};
+  margin-top: #{$minusIndent};
+  text-align: left;
 }
 
 .gallery__item {
@@ -33,10 +60,33 @@
   &:nth-last-child(-n + 3) {
     margin-bottom: 0px;
   }
+ 
+  flex-basis: calc(100vw - #{$plusIndent});
+
+  @media screen and (min-width: 480px) {
+    flex-basis: var(--width-container-480)-#{$plusIndent};
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - #{$plusIndent});
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 3 - #{$plusIndent});
+  }
 }
 
 .gallery__item:hover .gallery__overlay {
   transform: translateY(0);
+}
+
+
+
+.gallery__img {
+  height: 294px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .gallery__overflow {
