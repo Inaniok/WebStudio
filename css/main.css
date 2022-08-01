@@ -546,9 +546,6 @@ body {
   -webkit-transition: color var(--timing-function);
   transition: color var(--timing-function);
 }
-.footer-map:hover, .footer-map:focus {
-  color: var(--accent-color);
-}
 
 .footer-mailto,
 .footer-tel {
