@@ -1,0 +1,61 @@
+.regular {
+    padding: 60px 0px;
+    @media screen and (min-width: 1200px) {
+        padding: 94px 0px;
+    }
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.regular-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.regular-icon-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    height: 92px;
+
+    fill: #afb1b8;
+
+    transition: border-color var(--timing-function), fill var(--timing-function),
+        color var(--timing-function);
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+        color: var(--accent-color);
+        fill: var(--accent-color);
+    }
+}
+
+.team-icon-small:hover,
+.team-icon-small:focus {
+    fill: currentColor;
+}
+
+.regular .team-title {
+    margin-bottom: 30px;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+    }
+}
+
+.clients {
+    @media screen and (max-width: 767px) {
+        width: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 60px) / 3);
+    }
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 150px) / 6);
+    }
+}
