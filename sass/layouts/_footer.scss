@@ -41,12 +41,7 @@
     color: var(--second-title-color);
 
     transition: color var(--timing-function);
-
-    &:hover,
-    &:focus {
-        color: var(--accent-color);
-    }
-}
+   }
 
 .footer-mailto,
 .footer-tel {
