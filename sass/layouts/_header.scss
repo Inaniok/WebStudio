@@ -29,9 +29,9 @@
         }
     }
 
-    @media screen and (max-width: 1199px) {
-        height: 60px;
-    }
+    // @media screen and (max-width: 1199px) {
+    //     height: 60px;
+    // }
 }
 
 .nav__list {
@@ -131,7 +131,7 @@
     display: block;
     margin-left: auto;
     margin-right: 10px;
-    background-color: #fff;
+    background-color: var(--second-title-color);
 
     &:hover,
     &:focus {
