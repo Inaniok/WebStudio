@@ -3,21 +3,13 @@
   background-color: var(--key-bgc-color);
   text-align: center;
   padding: 118px 0px;
-  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+    background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/images_index/projects-img1.jpg');
-}
-
-.hero {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 118px 0px;
-
-//   @media screen and (max-width: 767px) {
-//     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-//       url('../images/images_index/img-mobile.jpg');
 
 @media screen and (min-device-pixel-ratio: 2),
 screen and (min-resolution: 192dpi),
