@@ -8,10 +8,33 @@
   --timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  color: var(--first-title-color);
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .list {
@@ -21,7 +44,16 @@ body {
 }
 
 .link {
+  color: var(--first-title-color);
   text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: var(--first-title-color);
+  background-color: var(--second-title-color);
+  font-family: "Roboto", sans-serif;
 }
 
 .portfolio-layer > img {
@@ -126,7 +158,7 @@ body {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: #ffffff;
+  background: var(--second-title-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .close:hover, .close:focus {
@@ -161,7 +193,7 @@ body {
           flex-direction: column;
 }
 .form-group:not(:last-child) {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .form-group textarea::-webkit-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
@@ -290,11 +322,11 @@ body {
   padding-left: 24px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--color-secondary);
+  color: var(--third-title-color);
 }
 
 .form-agreement-link {
-  color: var(--color-accent);
+  color: var(--accent-color);
 }
 
 .contract {
@@ -305,7 +337,7 @@ body {
   display: block;
   width: 200px;
   height: 50px;
-  margin: 74px auto 40px;
+  margin: 0 auto 40px;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -514,6 +546,7 @@ body {
 
 .footer-contact {
   text-align: center;
+  margin-bottom: 60px;
 }
 
 .footer-address {
@@ -590,9 +623,11 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 60px;
 }
 
+.footer-tablet {
+  margin-bottom: 60px;
+}
 @media screen and (min-width: 768px) {
   .footer-tablet {
     display: -webkit-box;
@@ -672,7 +707,8 @@ body {
 }
 
 .footer-form input {
-  width: 450px;
+  max-width: 450px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -752,6 +788,8 @@ body {
   letter-spacing: 0.06em;
   padding: 10px 28px;
   color: var(--second-title-color);
+  border: none;
+  cursor: pointer;
   -webkit-transition: background-color var(--timing-function);
   transition: background-color var(--timing-function);
 }
@@ -823,12 +861,6 @@ body {
   .nav__link,
 .main-nav__link {
     padding: 24px 0px;
-  }
-}
-@media screen and (max-width: 1199px) {
-  .nav,
-.main-nav {
-    height: 60px;
   }
 }
 
@@ -953,7 +985,7 @@ body {
   display: block;
   margin-left: auto;
   margin-right: 10px;
-  background-color: #fff;
+  background-color: var(--second-title-color);
 }
 .mob-menu-open:hover, .mob-menu-open:focus,
 .mob-menu-close:hover,
@@ -1073,8 +1105,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/images_index/projects-img1.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/images_index/projects-img1.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/images_index/projects-img1.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/images_index/projects-img1.jpg");
 }
 
 .hero {
@@ -1084,26 +1116,26 @@ body {
 }
 @media screen and (max-width: 767px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/images_index/img-mobile.jpg");
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/images_index/img-mobile.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/images_index/img-mobile.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/images_index/img-mobile.jpg");
   }
 }
 @media screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/images_index/img-mobile2x.jpg");
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/images_index/img-mobile2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/images_index/img-mobile2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/images_index/img-mobile2x.jpg");
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/images_index/img-tablet.jpg");
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/images_index/img-tablet.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/images_index/img-tablet.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/images_index/img-tablet.jpg");
   }
 }
 @media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/images_index/img-tablet2x.jpg");
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/images_index/img-tablet2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/images_index/img-tablet2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/images_index/img-tablet2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1115,8 +1147,8 @@ body {
 }
 @media screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/images_index/img2x.jpg");
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/images_index/img2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/images_index/img2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/images_index/img2x.jpg");
   }
 }
 
@@ -1152,6 +1184,8 @@ body {
   letter-spacing: 0.06em;
   color: var(--second-title-color);
   background-color: var(--accent-color);
+  border: none;
+  cursor: pointer;
   -webkit-transition: background-color var(--timing-function);
   transition: background-color var(--timing-function);
 }
@@ -1228,12 +1262,17 @@ body {
   border: none;
   border-radius: 4px;
   padding: 6px 22px;
-  -webkit-transition: background-color var(--timing-function);
-  transition: background-color var(--timing-function);
+  cursor: pointer;
 }
 .btn:hover, .btn:focus {
   color: var(--second-title-color);
   background-color: var(--accent-color);
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  -webkit-transition: color var(--timing-function) cubic-bezier(0.4, 0, 0.2, 1), background-color var(--timing-function) cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow var(--timing-function) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--timing-function) cubic-bezier(0.4, 0, 0.2, 1), background-color var(--timing-function) cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow var(--timing-function) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--timing-function) cubic-bezier(0.4, 0, 0.2, 1), background-color var(--timing-function) cubic-bezier(0.4, 0, 0.2, 1), box-shadow var(--timing-function) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--timing-function) cubic-bezier(0.4, 0, 0.2, 1), background-color var(--timing-function) cubic-bezier(0.4, 0, 0.2, 1), box-shadow var(--timing-function) cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow var(--timing-function) cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn.current {
   color: #ffffff;
@@ -1314,10 +1353,7 @@ body {
 
 .portfolio-layer-text {
   position: absolute;
-  padding: 63px 24px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
+  padding: 77px 24px;
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
