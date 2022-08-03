@@ -549,7 +549,6 @@ body {
 
 .footer-contact {
   text-align: center;
-  margin-bottom: 60px;
 }
 
 .footer-address {
@@ -1138,37 +1137,37 @@ body {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .hero .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), color-stop(rgba(47, 48, 58, 0.4)), to(url("../images/images_index/hero-mobile2x.jpg")));
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4), url("../images/images_index/hero-mobile2x.jpg"));
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))) url("../images/images_index/hero-mobile2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)) url("../images/images_index/hero-mobile2x.jpg");
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) and (max-width: 1199px) {
   .hero {
     padding: 118px 0;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), color-stop(rgba(47, 48, 58, 0.4)), to(url("../images/images_index/hero-tab1x.jpg")));
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4), url("../images/images_index/hero-tab1x.jpg"));
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/images_index/hero-tab1x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/images_index/hero-tab1x.jpg");
   }
 }
-@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
+@media (min-width: 767px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 767px) and (max-width: 1199px) and (min-resolution: 2dppx) {
   .hero {
     padding: 118px 0;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), color-stop(rgba(47, 48, 58, 0.4)), to(url("../images/images_index/hero-tabl2x.jpg")));
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4), url("../images/images_index/hero-tabl2x.jpg"));
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/images_index/hero-tabl2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/images_index/hero-tabl2x.jpg");
   }
 }
 @media (min-width: 1200px) {
   .hero {
     padding: 200px 0;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), color-stop(rgba(47, 48, 58, 0.4)), to(url("../images/images_index/hero-desk1x.jpg")));
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4), url("../images/images_index/hero-desk1x.jpg"));
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/images_index/hero-desk1x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/images_index/hero-desk1x.jpg");
   }
 }
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
     padding: 200px 0;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), color-stop(rgba(47, 48, 58, 0.4)), to(url("../images/images_index/hero-desk2x.jpg")));
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4), url("../images/images_index/hero-desk2x.jpg"));
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/images_index/hero-desk2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/images_index/hero-desk2x.jpg");
   }
 }
 .hero-title {
@@ -1304,10 +1303,10 @@ body {
   background-color: var(--accent-color);
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  -webkit-transition: color var(--timing-function) cubic-bezier(0.4, 0, 0.2, 1), background-color var(--timing-function) cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow var(--timing-function) cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color var(--timing-function) cubic-bezier(0.4, 0, 0.2, 1), background-color var(--timing-function) cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow var(--timing-function) cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color var(--timing-function) cubic-bezier(0.4, 0, 0.2, 1), background-color var(--timing-function) cubic-bezier(0.4, 0, 0.2, 1), box-shadow var(--timing-function) cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color var(--timing-function) cubic-bezier(0.4, 0, 0.2, 1), background-color var(--timing-function) cubic-bezier(0.4, 0, 0.2, 1), box-shadow var(--timing-function) cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow var(--timing-function) cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color var(--timing-function), background-color var(--timing-function), -webkit-box-shadow var(--timing-function);
+  transition: color var(--timing-function), background-color var(--timing-function), -webkit-box-shadow var(--timing-function);
+  transition: color var(--timing-function), background-color var(--timing-function), box-shadow var(--timing-function);
+  transition: color var(--timing-function), background-color var(--timing-function), box-shadow var(--timing-function), -webkit-box-shadow var(--timing-function);
 }
 .btn.current {
   color: #ffffff;
@@ -1375,12 +1374,6 @@ body {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.portfolio-link:hover .portfolio-layer-text,
-.portfolio-link:focus .portfolio-layer-text {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-
 .portfolio-layer {
   position: relative;
   overflow: hidden;
@@ -1400,11 +1393,16 @@ body {
   height: 100%;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
-  -webkit-transition: -webkit-transform var(--timing-function) cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform var(--timing-function) cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform var(--timing-function) cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform var(--timing-function) cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform var(--timing-function) cubic-bezier(0.4, 0, 0.2, 1);
-  overflow: auto;
+  -webkit-transition: -webkit-transform 400ms ease;
+  transition: -webkit-transform 400ms ease;
+  transition: transform 400ms ease;
+  transition: transform 400ms ease, -webkit-transform 400ms ease;
+}
+
+.portfolio-link:hover .portfolio-layer-text,
+.portfolio-link:focus .portfolio-layer-text {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .works-list {
