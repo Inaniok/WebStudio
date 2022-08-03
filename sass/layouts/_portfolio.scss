@@ -96,7 +96,7 @@
 
 .portfolio-layer-text {
     position: absolute;
-    padding: 77px 24px;
+    padding: 63px 24px;
     font-size: 18px;
     line-height: 1.56;
     letter-spacing: 0.03em;
@@ -108,7 +108,8 @@
     width: 100%;
     height: 100%;
     transform: translateY(100%);
-    transition: transform var(--timing-function);
+    transition: transform var(--timing-function) cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: auto;
 }
 
 .works-list {
@@ -145,3 +146,5 @@
         flex-grow: 1;
     }
 }
+
+
