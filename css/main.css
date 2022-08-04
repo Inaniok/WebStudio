@@ -1359,6 +1359,10 @@ body {
 .portfolio-item {
   width: 100%;
   height: auto;
+  -webkit-transition: -webkit-box-shadow var(--timing-function);
+  transition: -webkit-box-shadow var(--timing-function);
+  transition: box-shadow var(--timing-function);
+  transition: box-shadow var(--timing-function), -webkit-box-shadow var(--timing-function);
 }
 @media screen and (min-width: 768px) {
   .portfolio-item {
