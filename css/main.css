@@ -549,6 +549,12 @@ body {
 
 .footer-contact {
   text-align: center;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer-contact {
+    margin-bottom: 0;
+  }
 }
 
 .footer-address {
